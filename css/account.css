@@ -1,0 +1,74 @@
+span.accountEdit{ width: 300px; font-size: 14px; vertical-align: top;}
+span.accountEdit a {font-size: 14px; }
+
+td.uploadedPhoto	{margin: 0px; }
+td.uploadedPhoto a {font-size: 10px; color: red; cursor: pointer; text-decoration: underline; margin: 0px;}
+
+img.uploadedPhotoImg {border: 2px #cccccc solid;}
+img.uploadedPhotoImgMini {border: 2px green solid;}
+
+div.accountAll { margin: 0 0 0 0; width: 800px;}
+div.accountGeneral { background-color: white; margin: 0 0 0 2px; padding: 3px;}
+
+table.menuTable {font-size: 15px; border-spacing: 0px}
+table.menuTable td {padding: 5px;}
+table.menuTable a {font-size: 14px; color: black; cursor: pointer; text-decoration: underline; margin: 0px;}
+td.menuTable {background-color: #e7e7e7;}
+td.menuTableSelected {background-color: white;}
+
+div.title {font:bold 14px Arial; margin: 0 0 10px 0;;color:white;padding:5px 0 5px 20px;color:#7596a9;}
+div.title a {color:#7596a9;}
+
+
+
+table.inventoryEditTable {width: 100%; font-size: 12px; border-collapse: separate; border-spacing: 0px;}
+table.inventoryEditTable th {width: 150px; text-align: left; vertical-align: top; font-size: 13px;}
+table.inventoryEditTable tr {background-color: #e7e7e7;}
+table.inventoryEditTable td {padding: 3px;}
+
+table.inventoryTable {width: 100%; font-size: 12px; border-collapse: separate; border-spacing: 1px;}
+table.inventoryTable th {text-align: left; background-color: #e7e7e7;}
+table.inventoryTable tr {background-color: #e7e7e7;}
+table.inventoryTable td {padding: 3px;}
+table.inventoryTable a {font-size: 12px; cursor: pointer; text-decoration: underline; margin: 0px;}
+table.inventoryTable a:hover {font-size: 12px; color: red; cursor: pointer; text-decoration: underline; margin: 0px;}
+
+table.warehouseTable {width: 400px; font-size: 14px; empty-cells: show;}
+table.warehouseTable th {padding: 8px 10px 2px 0; width: 130px; text-align: right; font-size: 12px; color: #8b8b8b; }
+table.warehouseTable td {padding: 8px 0 2px 0; border-bottom: 0px solid #c7c7c7;}
+table.warehouseTable span {border-bottom: 1px solid #c7c7c7;}
+table.warehouseTable div {border-bottom: 1px solid #c7c7c7;}
+table.warehouseTable input {padding: 2px; margin: 0; border: 1px solid #c7c7c7; width: 200px; font-size: 10px; height: 17px;}
+table.warehouseTable select {padding: 2px; margin: 0; border: 1px solid #c7c7c7; width: 200px; font-size: 10px; height: 17px;}
+
+table.warehouseTableEdit {width: 400px; font-size: 14px; empty-cells: show;}
+table.warehouseTableEdit th {padding: 8px 10px 2px 0; width: 130px; text-align: right; font-size: 12px; color: #8b8b8b; }
+table.warehouseTableEdit td {padding: 8px 0 2px 0; border-bottom: 0px solid #c7c7c7;}
+table.warehouseTableEdit span {border-bottom: 1px solid #c7c7c7;}
+table.warehouseTableEdit div {border-bottom: 0px solid #c7c7c7;}
+table.warehouseTableEdit input {padding: 2px; margin: 0; border: 1px solid #c7c7c7; width: 250px; font-size: 10px; height: 19px;}
+table.warehouseTableEdit select {padding: 2px; margin: 0; border: 1px solid #c7c7c7; width: 250px; font-size: 10px; height: 19px;}
+
+table.inventoryTableEdit {width: 700px; font-size: 14px; empty-cells: show;}
+table.inventoryTableEdit th {padding: 10px 10px 2px 0; border-bottom: 0 solid red; width: 130px; text-align: right; font-size: 12px; color: #8b8b8b; vertical-align: bottom;}
+span.sInventoryTableEdit {padding-bottom: 0px; border-bottom: 1px solid #c7c7c7;}
+div.dInventoryTableEdit {padding: 15px 0 0 0; border-bottom: 1px solid #c7c7c7; padding-bottom: 2px; vertical-align: middle;}
+input.iInventoryTableEdit {padding: 2px; margin: 0; border: 1px solid #c7c7c7;  font-size: 10px; height: 19px;}
+span.spanRadio {margin-right: 10px;}
+
+table.stoneListTable {width: 500px; font-size: 12px; empty-cells: show; border: none;}
+table.stoneListTable td {padding: 0px; margin: 0px;}
+table.stoneListTable #stoneListDiv {margin: 3px 0 3px 0; padding: 2px 2px 2px 0; }
+table.stoneListTable a {cursor: pointer; text-decoration: underline; margin: 3px 0 3px 0; padding: 2px 2px 2px 0; }
+
+div.stoneCntFound {font-size: 13px; color: green; padding: 3px; border-bottom: 1px dotted green; margin-right: 0px; }
+div.stoneCntNotFound {font-size: 13px; color: red; padding: 10px; border-bottom: 1px dotted green; margin-right: 0px; }
+
+table.newStoneTable {width: 500px; font-size: 11px; empty-cells: show; border: 0 solid red;}
+table.newStoneTable th {color: red; padding: 10px 10px 2px 0; border-bottom: 0 solid red; width: 120px; text-align: right; font-size: 11px; vertical-align: bottom;}
+span.sNewStoneTable {padding-bottom: 0px; border-bottom: 1px solid #c7c7c7;}
+div.dNewStoneTable {padding: 10px 0 0 0; border-bottom: 1px solid #c7c7c7; padding-bottom: 2px; vertical-align: middle;}
+
+table.inventoryListTable {width: 100%; font-size: 12px; empty-cells: show; border: 0px solid red; margin-top: 10px;}
+table.inventoryListTable th {padding: 6px; text-align: left; font-size: 13px; color: #8b8b8b; border-bottom: 1px solid #c7c7c7;}
+table.inventoryListTable td {padding: 6px; border-bottom: 1px dotted #c7c7c7;}

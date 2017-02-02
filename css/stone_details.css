@@ -1,0 +1,63 @@
+.id_column{
+	float: right;
+	width: 650px;
+	background-color: #eee;;
+	padding-bottom: 5px;
+}
+#stone_details{float: left;width: 452px;text-align:left;}
+.head1{background-image: url(../img/head_bckgrd1.png);}
+#lowprice{font: bold 18px Arial;margin:10px 0 10px 100px;color:#096092;}
+#orderhere{float: right;width: 192px;height:336px;padding:1px;margin: 32px 0 0 0;border: 1px solid #096092;}
+
+ul.det_tab{	color: Gray;list-style-image: url(../img/square2.png);line-height:20px;margin-bottom:0;}
+
+#thick{float: left;width:130px;font:bold 12px tahoma;text-align:right;}
+#thick_sel{float: left;}
+
+#overdetails{position:relative;left:0px;width:444px;font-size:11px;color:#160000;margin:0px 0 0 5px;}
+
+div#info{ position:absolute;top:19px;display:block;width:444px;border: 1px solid #88a1b0;border-top:none;height:340px;}
+div#desc{ position:absolute;top:19px;display:none;width:444px;border: 1px solid #88a1b0;border-top:none;height:340px;}
+div#ship{ position:absolute;top:19px;display:none;width:444px;border: 1px solid #88a1b0;border-top:none;height:340px;}
+
+div#info_s{display: none;position: absolute;left: 0px;top:0px;background-image: url(../img/tab_out.png);width: 125px;height: 20px;}div#info_s p{text-align:center;padding-top:3px;margin:0;} div#info_s a{text-decoration: none;color:#13435f;}
+div#desc_s{display:block;position:absolute;left:125px;top:0px;background-image: url(../img/tab_out.png);width:125px;height:20px;}div#desc_s p{text-align:center;padding-top:3px;margin:0;} div#desc_s a{text-decoration: none;color:#13435f;}
+div#ship_s{display:block;position:absolute;left:250px;top:0px;background-image: url(../img/tab_out2.png);width:195px;height:20px;}div#ship_s p{padding:3px 0 0 15px;margin:0;} div#ship_s a{text-decoration: none;color:#13435f;}
+
+div#info_e{display:block;position:absolute;left:0px;top:0px;background-image: url(../img/tab_on.png);width:125px;height:20px;}div#info_e p{text-align:center;padding-top:3px;margin:0;} div#info_e a{text-decoration: none;color:#13435f;font-weight:bold;}
+div#desc_e{display:none;position:absolute;left:125px;top:0px;background-image: url(../img/tab_on.png);width:125px;height:20px;}div#desc_e p{text-align:center;padding-top:3px;margin:0;} div#desc_e a{text-decoration: none;color:#13435f;font-weight:bold;}
+div#ship_e{display:none;position:absolute;left:250px;top:0px;background-image: url(../img/tab_on2.png);width:195px;height:20px;}div#ship_e p{padding:3px 0 0 15px;margin:0;} div#ship_e a{text-decoration: none;color:#13435f;font-weight:bold;}
+
+ul#inventoryStoneList{margin:0;padding:0;}
+
+.c_selected{
+	float: left;
+	font-size:10px;
+	background-color: #ededed;
+	margin:1px 0 0 5px;
+	padding:2px;
+	color: #7c96a6;
+	width:90px;
+	height:25px;
+}
+.c_size{
+	float: left;
+	font-size:10px;
+	background-color: #ededed;
+	margin:1px 0 0 2px;
+	padding:2px;
+	color: #7c96a6;
+	width:43px;
+	height:25px;
+}
+.c_pr{
+	float: left;
+	font-size:10px;	
+	font-weight:bold;
+	background-color: #ededed;
+	margin:1px 0 0 2px;
+	padding:2px;
+	color: #7c96a6;
+	width:29px;
+	height:25px;
+}

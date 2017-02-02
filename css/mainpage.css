@@ -1,0 +1,28 @@
+#mp_buy{float: left;width:311px;background-image: url(../img/mp_buy.png);margin:4px 0 0 10px;text-align: left;}
+#mp_buy p{font: bold 14px Arial;margin:10px;padding-left:20px;}
+#mp_buy ul{font-size:12px;margin:0 0 0 50px;padding:0;line-height:20px;}
+#mp_buy_f{
+	float: left;
+	width:311px;
+	height: 37px;	
+	background-image: url(../img/mp_foot_buy.png);
+	margin:0 0 0 10px;
+	text-align:right;
+	margin-bottom:20px;
+}
+#mp_buy_f a{padding: 0 10px 0 0;text-decoration:none;font:bold 13px Verdana;color:#416d8f;}
+#mp_buy_f a:hover{color:#08406c;}
+
+#mp_sell{float: right;width:311px;background-image: url(../img/mp_sell.png);margin-top: 4px;text-align: left;color:#b65601;}
+#mp_sell p{font: bold 14px Arial;margin:10px;padding-left:20px;}
+#mp_sell ul{font-size:12px;margin:0 0 0 50px;padding:0;line-height:20px;}
+#mp_sell_f{
+	float: right;
+	width:311px;
+	height: 37px;
+	background-image: url(../img/mp_foot_sell.png);
+	text-align:right;
+	
+}
+#mp_sell_f a{padding: 0 10px 0 0;text-decoration:none;font:bold 13px Verdana;color:#ff8400;}
+#mp_sell_f a:hover{color:red;}

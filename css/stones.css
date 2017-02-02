@@ -1,0 +1,7 @@
+div.s_cont_all{max-width:641px;float:right;background-image: url(../img/stone_bckgrd2.png); margin:0; padding:0; border-right: 1px solid #d0d0d0}
+div.s_cont{float:left;width: 160px;height: 83px;background-image: url(../img/stone_bckgrd.png);text-align: left; margin:0;padding:0;}
+.s_cont a{font: bold 12px Arial;color:#3a7496;text-decoration:none; margin:0 0 0 8px;line-height:20px;}
+.s_cont a:hover{color:#015789;}
+.s_img{position:relative;left:8px;top:2px;}
+.s_price{float: right;width: 65px;text-align: left;font-family:Arial;}
+.price2{font:Bold 11px Tahoma; color:green;}
