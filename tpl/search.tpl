@@ -40,17 +40,20 @@
       		{/section}
       		</tbody>
       		</table>
-      		<div style="float:left;margin:10px 5px 10px 5px;">Estimated Price: <strong>${$container_summary.total}</strong></div>
-      		<div style="float:left;margin:10px 5px 10px 5px;">Coverage: <strong>{$container_summary.coverage} sqft</strong></div>
-      		<div style="float:left;margin:10px 5px 10px 5px;">Bundles: <strong>{$container_summary.bundle}</strong></div>
-      		<div style="float:left;margin:10px 5px 10px 5px;">Slabs: <strong>{$container_summary.bundle*7}</strong></div>
+      		<hr>
+      		<div class="pull-left" style="margin:10px 5px 10px 5px;">Estimated Price: <strong>${$container_summary.total}</strong></div>
+      		<div class="pull-left" style="margin:10px 5px 10px 5px;">Coverage: <strong>{$container_summary.coverage} sqft</strong></div>
+      		<div class="pull-left" style="margin:10px 5px 10px 5px;">Bundles: <strong>{$container_summary.bundle}</strong></div>
+      		<div class="pull-left" style="margin:10px 5px 10px 5px;">Slabs: <strong>{$container_summary.bundle*7}</strong></div>
       		{if $smarty.session.slabmarket.container.user == 1 || $smarty.session.slabmarket.redirect.mode != 'stoneOther'}
+
       	    {else}
-      		    <img src="{$_upDir}img/mcart_lines.png" alt="" width="145" height="3" border="0" style="margin:5px 0 5px 1px;">
-      		    <div style="text-align:center;color:#666;font-size:10px;">
-      			    Container Capacity<br>
-      			    <a href="{$_upDir}container"><img src="{$_upDir}img/mc_{$container_summary.bundle}.png" alt="" width="130" height="27" border="0"></a>
-      		    </div>
+	      		<br>
+	      		<hr>
+		    	<div style="clear:both; text-align:center;color:#666;font-size:10px;">
+		    	<h4>Container Capacity</h4>
+		    	<a href="{$_upDir}container"><img src="{$_upDir}img/mc_{$container_summary.bundle}.png" alt="" width="130" height="27" border="0"></a>
+		    	 </div>
       	    {/if}
       	{else}
       	<p>Your {if $smarty.session.slabmarket.container.user == 1}Order{else}Container{/if} is Empty</p>

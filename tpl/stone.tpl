@@ -179,8 +179,7 @@
 								</tbody>
 							</table>
 							<div class="input-group plus_minus_quantity"> <!-- ADDED CLASS -->
-								<p><b>Bundle Quantities: </b></p>
-								<span class="input-group-btn">
+								<p><b>Bundle Quantities: </b> <span class="input-group-btn">
 									<button type="button" name="buttonMinus" value="" onclick="changeQuantity(-1,'{$container_summary.bundle}','{$stone.id_slab_user}');" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
 										<span class="glyphicon glyphicon-minus"></span>
 									</button>
@@ -188,14 +187,17 @@
 									<button type="button" name="buttonPlus" value="" onclick="changeQuantity(1,'{$container_summary.bundle}','{$stone.id_slab_user}');" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
 										<span class="glyphicon glyphicon-plus"></span>
 									</button>
-								</span>
+								</span></p>
+
 							</div>
 
-							<p>Coverage: <span id="coverage"></span></p>
+							<div class="text-center">
+								<p>Coverage: <span id="coverage"></span></p>
 
-							<p>Slab Quantity: <span id="slabQuantity">7</span></p>
-							<hr>
-							<p><b>Total Price: <span id="objectPriceTotal">$0</span></b></p>
+								<p>Slab Quantity: <span id="slabQuantity">7</span></p>
+								<hr>
+								<p><b>Total Price: <span id="objectPriceTotal">$0</span></b></p>
+							</div>
 
 							<div>
 								{if $userType == 0}
@@ -212,7 +214,7 @@
 									</div>
 									{/if}
 								{/if}
-							  
+
 						</form>
 					</div>
 				</div>

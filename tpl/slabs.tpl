@@ -69,9 +69,13 @@
 					<h3>Stones from Quarries</h3>
 				</div>
 				<div class="well well-lg" style="margin:20px">
-					<h4>All Slabs</h4>
-					<div class="all_slabs_with_dropdown">
-						<p>Select a specific stone type:</p>
+					<div class="pull-left">
+						{if $_link1=='all-slabs'}<h1>All Slabs</h1>
+				        {else}<h1>{$type2|capitalize} Slabs</h1>
+				        {/if}
+					</div>
+					<div class="all_slabs_with_dropdown pull-right">
+						<p>Select a specific stone type: </p>
 
 						<select name='stone_search' style="display:inline" onchange="location.href=this.options[this.selectedIndex].value">
 							<option value="{$_upDir}all-slabs/0">All Slabs</option>
@@ -79,6 +83,9 @@
 							<option value="{$_upDir}{$arrType[i].type|lower}-slabs/0" {if strtolower($arrType[i].type)==strtolower($type|replace:" ":"-")}selected{/if}>{$arrType[i].type|replace:"-":" "} Slabs</option>
 							{/section}
 						</select>
+					</div>
+					<div style="clear: both;">
+
 					</div>
 				</div>
 				<div class="panel-body">
@@ -97,4 +104,4 @@
 		</div>
 	</div>
 </div>
-
+{if $_link3 == 'w'}<script>toggleLayer(2);</script>{/if}
