@@ -17,11 +17,29 @@
     <div>
       <div class="panel-body">
       	{if is_array($container.item_list)}
-      	<div class="mcart_h1">Stone</div><div class="mcart_h2">Qty.</div>
+   			<table class="table table-bordered">
+   			   <tbody>
+   			   <tr>
+   			   	<td style="border-right-color:transparent;"><small>Stone</small></td>
+   			   	<td><small>&nbsp;</small></td>
+   			   	<td><small>Qty.</small></td>
+   			   </tr>
       		{assign var='arr' value=$container.item_list}
       		{section name=i loop=$arr}
-      			<div class="mcart_c1">{if strstr($arr[i].product_name,"1/4") === false}<img src="{$_upDir}img/mcart_1.png" alt="" width="17" height="15	" border="0" align="left">{else}<img src="{$_upDir}img/mcart_2.png" alt="" width="17" height="15	" border="0" align="left">{/if}<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}">{$arr[i].stone_name|capitalize}</a></div><div class="mcart_c2">{$arr[i].quantity}</div>
+
+      			  	<tr>
+      			  		<td style="border-right-color:transparent;">
+      			  		{if strstr($arr[i].product_name,"1/4") === false}<strong>¾'</strong>{else}<strong>1¼'</strong>{/if}
+      			  		</td>
+      			  		<td>
+      			  		<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}">{$arr[i].stone_name|capitalize}</a>
+      			  		</td>
+      			  		<td>{$arr[i].quantity}</td>
+      			  	</tr>
+
       		{/section}
+      		</tbody>
+      		</table>
       		<div style="float:left;margin:10px 5px 10px 5px;">Estimated Price: <strong>${$container_summary.total}</strong></div>
       		<div style="float:left;margin:10px 5px 10px 5px;">Coverage: <strong>{$container_summary.coverage} sqft</strong></div>
       		<div style="float:left;margin:10px 5px 10px 5px;">Bundles: <strong>{$container_summary.bundle}</strong></div>

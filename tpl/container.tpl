@@ -28,9 +28,9 @@ var containerValuesArr = new Array();
 	{if is_array($container)}
 
 		{if $msg!=''}
-			<div class="alert alert-dismissible alert-danger">
+			<div class="alert alert-dismissible alert-success">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  <strong>Oh snap!</strong> {$msg}.
+			  <strong>Well done!</strong> {$msg}.
 			</div>
 		{/if}
 	<div class="row">
