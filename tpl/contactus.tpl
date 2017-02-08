@@ -9,8 +9,8 @@
 	}
 </script>
 {/literal}
-
-<div class="col-sm-12">
+{include file='search.tpl'}
+<div class="col-sm-9">
 
 	<div class="panel panel-default">
 		<div class="panel-heading">
@@ -21,7 +21,7 @@
 				<p>Below you can see a list of suppliers currently offering slabs in our Slab Market™. In order to offer competitive pricing, the names of the suppliers are withheld. Therefore, they are identified by their ID number, country of origin and the number of colors available.</p>
 			</div>
 
-			<div class="contact_form_card col-md-6">
+			<div class="contact_form_card col-md-8">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4>Contact Form</h4>
@@ -83,16 +83,16 @@
 								<label for="code">Code*</label>
 								<input type="text" id="code" name="{$captchaArr.formName}" maxlength="4" class="form-control">
 							</div>
-							<button type="submit" class="btn btn-default pull-right">Submit</button>
+							<button type="submit" class="btn btn-primary pull-right">Submit</button>
 
-							<button type="reset" class="btn btn-default pull-right" style="margin-right:5px">Reset</button>
+							<button type="reset" class="btn btn-danger pull-right" style="margin-right:5px">Reset</button>
 						</form>
 
 					</div>
 				</div>
 			</div>
 
-			<div class="contact_info_card col-md-6">
+			<div class="contact_info_card col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h4>Contact Info</h4>
@@ -101,10 +101,10 @@
 
 						<div class="media">
 							<div class="media-left">
-								<span class="glyphicon glyphicon-earphone gi-4x"></span>
+								<span class="glyphicon glyphicon-earphone gi-3x"></span>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading">Phone Contact Information:</h4>
+								<h5 class="media-heading">Phone Contact Information:</h5>
 								<p>Mon - Fri 8:00am - 5:00pm EST</p>
 								<p>Local: <a href="tel:+12016556464">(201) 655-6464</a></p>
 								<p>Fax: <a href="tel:+12016556464">(201) 621-6169</a></p>
@@ -113,10 +113,10 @@
 
 						<div class="media">
 							<div class="media-left">
-								<span class="glyphicon glyphicon-envelope gi-4x"></span>
+								<span class="glyphicon glyphicon-envelope gi-3x"></span>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading">Email Contact:</h4>
+								<h5 class="media-heading">Email Contact:</h5>
 								<p>Please send email inquires to:</p>
 								<p><a href="mailto:sm@marble.com">sm@marble.com</a></p>
 							</div>
@@ -124,10 +124,10 @@
 
 						<div class="media">
 							<div class="media-left">
-								<span class="glyphicon glyphicon-edit gi-4x"></span>
+								<span class="glyphicon glyphicon-edit gi-3x"></span>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading">Write To Us:</h4>
+								<h5 class="media-heading">Write To Us:</h5>
 								<a href="https://www.google.com/maps/place/Marble.com/@40.8570847,-74.031489,16.99z/data=!4m5!3m4!1s0x89c2f761cecd90a1:0x1a991f48070da37f!8m2!3d40.8570849!4d-74.029264" target="_blank"><p>1 Mt Vernon St <br/> Ridgefield, Park,NJ 07660</p></a>
 							</div>
 						</div>

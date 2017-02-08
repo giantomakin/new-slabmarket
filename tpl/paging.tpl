@@ -1,6 +1,6 @@
 ﻿{if is_array($paging) && count($paging)>0}
 <ul class="pagination">
-
+	<!-- <p>{$paging.result}</p> -->
 	{if $paging.page_active!=1 and $paging.page_active!=''}
 	<li><a href="{$_upDir}{$linkString}/0">First</a></li>
 	<li><a href="{$_upDir}{$linkString}/{$paging.page_active-2}">Previous</a></li>
@@ -8,9 +8,9 @@
 
 	{section name=i loop=$paging.pages}
 	{if $paging.page_active==$paging.pages[i]}
-	<li class="active"><span>{$paging.pages[i]-1}</span></li>
+	<li class="active"><span>{$paging.pages[i]}</span></li>
 	{else}
-	<li><a href="{$_upDir}{$linkString}/{$paging.pages[i]-1}">{$paging.pages[i]-1}</a></li>
+	<li><a href="{$_upDir}{$linkString}/{$paging.pages[i]-1}">{$paging.pages[i]}</a></li>
 	{/if}
 	{/section}
 

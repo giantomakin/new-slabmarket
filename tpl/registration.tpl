@@ -1,95 +1,106 @@
-﻿<script type="text/javascript" src="{$_upDir}core/js/passwordStrength/meter.js"></script>
+<script type="text/javascript" src="{$_upDir}core/js/passwordStrength/meter.js"></script>
 <script type="text/javascript" src="{$_upDir}core/js/formValidate/formValidate.js"></script>
 <script type="text/javascript" src="{$_upDir}xml_js/registration.js"></script>
+<!-- Begin Row -->
+<div class="col-sm-12">
 
-{if $accountType==1}
-<div class="b2h" style="width:800px;margin:10px 0 10px 0;"><div class="b2h_left"></div><div class="b2h_right"></div><h1>Create Seller Account</h1></div>
-{elseif $accountType==0}
-<div class="b2h" style="width:800px;margin:10px 0 10px 0;"><div class="b2h_left"></div><div class="b2h_right"></div><h1>Create Buyer Account</h1></div>
-{/if}
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			{if $accountType==1}
+			<h3 class="">Create Seller Account</h3>
+			{elseif $accountType==0}
+			<h3>Create Buyer Account</h3>
+			{/if}
+		</div>
+		<div class="panel-body">
+
+			<div class="row">
+				<div class="new_member_account_card col-md-6"> <!-- Begin of New Member Account Card -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Required information for Slabmarket account</h4>
+						</div>
+						<div class="panel-body">
+
+							<form action="{$_upDir}registration" method="POST" id="fRegister" onsubmit="return checkForm();">
+									<input type="hidden" name="action" value="register">
+									<input type="hidden" name="alastid" value="{$_alastid}">
+
+									<div id="registerError" style="display: none;" class="alert alert-dismissible alert-danger">
+									  <button type="button" class="close" data-dismiss="alert">&times;</button>
+									  <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+									</div>
+								<div class="form-group">
+									<label for="email1">Email address*</label>
+									<input type="email" required="true" class="form-control" id="email1" name="email1" value="{$data.email1}" size="40" maxlength="80">
+								</div>
+								<div class="form-group">
+									<label for="email2">Confirm email address*</label>
+									<input type="email" required="true" class="form-control" id="email2" name="email2" value="{$data.email2}" size="40" maxlength="80">
+								</div>
+								<div class="form-group">
+									<p>Minimum of 6 characters including digits.</p>
+								</div>
+								<div class="form-group">
+									<label for="pass1">Password*</label>
+									<input type="password" required="true" class="form-control" name="pass1" id="pass1" value="{$data.pass1}" size="40" maxlength="20" onkeyup="updateStrength(this.value);" onblur="updateStrength(this.value);"">
+
+								</div>
+								<div class="form-group">
+
+									<img src="{$_upDir}core/js/passwordStrength/img/begin.gif" id="strength" border="0" style="object-fit: contain;">
+								</div>
+								<div class="form-group">
+									<label for="pass2">Confirm password*</label>
+									<input type="password" required="true" class="form-control" name="pass2" id="pass2" value="{$data.pass2}" size="40" maxlength="20">
+								</div>
+								<div class="form-group">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="remember" value="1"> Remember me on this computer.<br>(*required fields).
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+
+									<img src="{$_upDir}{$captchaArr.dir}{$captchaArr.fileName}" style="object-fit: contain;">
+								</div>
+								<div class="form-group">
+									<label for="code">Word Verification:</label>
+									<input type="password" id="captchaCode" name="{$captchaArr.formName}" size="15" maxlength="4" class="form-control">
+								</div>
+								<div class="form-group">
+									<p><span style="color:#555d69;font-size:11px;">By clicking on 'I accept' below you are agreeing to the <a href="">Terms of Service</a> above and the <a href="">Privacy Policy</a>.</span>
+									</p>
+								</div>
+
+								<input type="submit" name="submit" class="btn btn-primary pull-right" value="I accept. Create my account">
+							</form>
+						</div>
+					</div>
+				</div> <!-- End of New Member Account Card -->
+				<div class="col-md-6">
+					<div class="row">
+						<div class="sign_in_info_card col-md-12"> <!-- Begin of Sign In Info Card -->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4>Already have an account?</h4>
+								</div>
+								<div class="panel-body">
+									<p style="text-align:center;font: 14px Arial;padding:30px;margin:0;">If you already have a Slabmarket Account, you can sign in <a href="{$_upDir}login">here</a>.</p>
+								</div>
+							</div>
+						</div> <!-- End of Sign In Info Card -->
 
 
-<div style="float:right;width:330px;">
-	<div class="g4h" style="float:right;width:330px;clear:none;"><div class="g4h_left"></div><div class="g4h_right"></div><p>Already have an account?</p></div>
-	<div class="cont_box" style="float:right;clear:both;width:330px;background-image: url({$_upDir}img/contact_bckgrd2.png);">
-	
-	<p style="text-align:center;font: 14px Arial;padding:30px;margin:0;">If you already have a Slabmarket Account, you can sign in <a href="{$_upDir}login">here</a>.</p>
-	</div>
-	<div class="g2h" style="float:right;width:330px;"><div class="g2h_left"></div><div class="g2h_right"></div></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> <!-- End of Panel Default -->
 </div>
-
-<div style="float:left;width:450px;margin-bottom:10px;">
-	<div class="g4h" style="width:450px;clear:none;"><div class="g4h_left"></div><div class="g4h_right"></div><p>Required information for Slabmarket account</p></div>
-	<div class="cont_box" style="float:left;clear:none;width:450px;background-image: url({$_upDir}img/contact_bckgrd1.png);">
-	
-		<table border="0" cellspacing="0" cellpadding="0" style="font:12px Arial;">
-		<form action="{$_upDir}registration" method="POST" id="fRegister" onsubmit="return checkForm();">
-		<input type="hidden" name="action" value="register">	
-		<input type="hidden" name="alastid" value="{$_alastid}">	
-			<tr>
-				<td></td>
-				<td><div id="registerError" style="display: none; color: red; margin: 5px;"></div></td>
-			</tr>
-			<tr>
-				<td nowrap><p>Email address*</p></td>
-				<td><input type="text" name="email1" value="{$data.email1}" size="40" maxlength="80"></td>
-			</tr>
-			<tr>
-				<td nowrap><p>Confirm email address*</p></td>
-				<td><input type="text" name="email2" value="{$data.email2}" size="40" maxlength="80"></td>
-			</tr>
-			<tr><td></td><td><p style="color:#666;font-size:11px;">Minimum of 6 characters including digits.</p></td></tr>
-			<tr>
-				<td valign="top" nowrap><p>Password*</p></td>
-				<td><input type="password" name="pass1" id="pass1"  value="{$data.pass1}" size="40" maxlength="20" onkeyup="updateStrength(this.value);" onblur="updateStrength(this.value);">
-					<img src="{$_upDir}core/js/passwordStrength/img/begin.gif" id="strength" border="0" align="top" />
-					</td>
-			</tr>
-			<tr>
-				<td nowrap><p>Confirm password*</p></td>
-				<td><input type="password" name="pass2" value="{$data.pass2}" size="40" maxlength="20"></td>
-			</tr>
-			<tr>
-				<td nowrap></td>
-				<td>
-					<p style="text-align:;color:#555d69;">
-						<label><input type="checkbox" name="remember" value="1"><span style="color:#666;font-size:11px;">Remember me on this computer.<br>(*required fields).</span></label>
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2"><hr></td>
-			</tr>
-			<tr>
-				<td nowrap valign="top"><p>Word Verification:</p></td>
-				<td>
-					<img src="{$_upDir}{$captchaArr.dir}{$captchaArr.fileName}"><br />
-					<span style="color:#555d69;font-size:11px;">Type the characters you see in the picture below.<br> The code is not case sensitive<br>
-					<input type="password" name="{$captchaArr.formName}" size="15" maxlength="4">
-					</span>
-				</td>
-			</tr>
-			<tr>
-				<td nowrap valign="top"></td>
-				<td>
-					<span style="color:#555d69;font-size:11px;">By clicking on 'I accept' below you are agreeing to the <a href="">Terms of Service</a> above and the <a href="">Privacy Policy</a>.</span>
-					<br /><br />
-				</td>
-			</tr>
-			<tr>
-				<td align="right">
-				</td>
-				<td><input type="submit" name="submit" value="I accept. Create my account">
-				</td></form>
-			</tr>
-		</table>
-		<br>
-		<br>
-		
-	</div>
-	<div class="g2h" style="width:450px;"><div class="g2h_left"></div><div class="g2h_right"></div></div>
-</div>
-
+<!-- End Row -->
 
 {literal}
 <script language="javascript">

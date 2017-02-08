@@ -71,11 +71,11 @@ var containerValuesArr = new Array();
 			      	<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}" style="margin:0;padding:0;"><img src="{if $arr[i].photo!=''}{$_upDir}core/storage/slabmarket/stone/{$arr[i].photo}_t.jpg{else}{$_upDir}img/stonenophoto.png{/if}" alt="{$arr[i].stone_name}" width="50" height="50" border="0" style="margin:10px  4px 0 10px;"></a>
 			      </td>
 			      <td>
-						<a href="#" class="btn btn-default btn-xs" role="button" name="buttonPlus" onclick="changeQuantity(1,'{$arr[i].item}');"><i class="fa fa-plus-circle" aria-hidden="true"></i> </a>
+						<a href="#" class="btn btn-default btn-xs" role="button" name="buttonPlus" onclick="changeQuantity(1,'{$arr[i].item}');"><i class="fa fa-plus-circle" style="color:#28b62c;" aria-hidden="true"></i> </a>
 						Bundles: <span id="{$arr[i].item}quantity" style="font:bold 14px Arial;">{$arr[i].quantity}</span>
 			      		<br>
 
-			      		<a href="#" class="btn btn-default btn-xs" role="button" name="buttonMinus" onclick="changeQuantity(-1,'{$arr[i].item}');"><i class="fa fa-minus-circle" aria-hidden="true"></i> </a>	Slabs: <span id="{$arr[i].item}slabQuantity" style="font:bold 14px Arial;">{$arr[i].quantity*7}</span><br>
+			      		<a href="#" class="btn btn-default btn-xs" role="button" name="buttonMinus" onclick="changeQuantity(-1,'{$arr[i].item}');"><i class="fa fa-minus-circle" aria-hidden="true" style="color:#ff4136" ></i> </a>	Slabs: <span id="{$arr[i].item}slabQuantity" style="font:bold 14px Arial;">{$arr[i].quantity*7}</span><br>
 
 			      	Coverage: <span id="{$arr[i].item}coverage" style="font:bold 13px Arial;">{$arr[i].coverage|string_format:"%.2f"}</span> sq ft
 			      	</div>
@@ -123,11 +123,11 @@ var containerValuesArr = new Array();
 			    <div class="b4h" style="width:150px;margin:1px 0 20px 0;"><div class="b4h_left"></div><div class="b4h_right"></div><p></p></div>
 			</div>
 			<div class="cont_right" style="display: none;">
-			    <div class="capacity_box"><img id="capacityMeter" alt="Capacity Meter"  border="0" style="margin:35px 0 0 45px;"></div>
+			    <div class="capacity_box"><img id="capacityMeter" alt="Capacity Meter"  border="0" style="margin:0px 0 0 45px;"></div>
 			</div>
 			{else}
 
-				<div class="capacity_box"><img id="capacityMeter" alt="Capacity Meter"  border="0" style="margin:35px 0 0 45px;"></div>
+				<div class="capacity_box"><img id="capacityMeter" alt="Capacity Meter"  border="0" style="margin:0px 0 0 45px;"></div>
 
 			{/if}
 		</div>

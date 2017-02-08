@@ -25,7 +25,7 @@
 
         </div>
         <div class="media-right">
-          <p>{$arr[i].stone_type} <br/> <span>{if $arr[i].item_price == 0 || $arr[i].id_slab_user == 2848}Inquire</span>{else}${$arr[i].item_price|string_format:"%.2f"}</span>/sq.ft.{/if}</p>
+          <p>{$arr[i].stone_type}<br/> <strong><span style="color:#158cba;">{if $arr[i].item_price == 0 || $arr[i].id_slab_user == 2848}Inquire</span>{else}${$arr[i].item_price|string_format:"%.2f"}</span>/sq.ft.{/if}</strong></p>
           {if $mode=='stoneOtherQuarries'}
           	<a style="cursor: pointer;" onclick="redirectStone1('{$arr[i].stone_name}','stoneOtherQuarries',{$stone.id_slab_user},{$arr[i].id_slab_item})"><img src="{$_upDir}img/s_detail.png" alt="{$arr[i].stone_name}" width="48" height="11" vspace="10" hspace="5" border="0" align="right"></a>
           {else}

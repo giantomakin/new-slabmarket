@@ -4,6 +4,35 @@
 <div class="container col-sm-3" id="id_search">
 
   <div class="panel panel-default your_container_tab">
+	    <div class="panel-heading">
+			Hello! {$_userLogin}
+			<span class="glyphicon glyphicon-cog"></span>
+	    </div>
+	    <div class="panel-body">
+	    	<div class="list-group">
+	    	  <a class="list-group-item" href="{$_upDir}tracking" title="" class="tl_left">Order tracking</a>
+
+	    	  	<a class="list-group-item" href="{$_upDir}container" title="">
+	    	  		{if $smarty.session.slabmarket.container.user == 1}
+	    	  		Order
+	    	  		{else}
+	    	  		Container
+	    	  		{/if}
+	    	  	</a>
+
+	    	  {if $_userIsSigned==1}
+	    	  <a class="list-group-item" href="{$_upDir}account" title="">My account</a>
+	    	  <a class="list-group-item" href="{$_upDir}logout">Sign Out</a>
+	    	  {else}
+	    	  <a class="list-group-item" href="{$_upDir}login" title="" class="tl_right">Sign In</a>
+	    	  {/if}
+	    	</div>
+	    </div>
+
+  </div>
+
+  <div class="panel panel-default your_container_tab">
+
     <div class="panel-heading">
 		{if $smarty.session.slabmarket.container.user == 1}
 		Your Order
@@ -32,9 +61,9 @@
       			  		{if strstr($arr[i].product_name,"1/4") === false}<strong>¾'</strong>{else}<strong>1¼'</strong>{/if}
       			  		</td>
       			  		<td>
-      			  		<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}">{$arr[i].stone_name|capitalize}</a>
+      			  		<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}"><strong>{$arr[i].stone_name|capitalize}</strong></a>
       			  		</td>
-      			  		<td>{$arr[i].quantity}</td>
+      			  		<td><strong>{$arr[i].quantity}</strong></td>
       			  	</tr>
 
       		{/section}
@@ -74,15 +103,15 @@
 
 			  <input type="text" name="stone_name" value="{$_search.stoneName}" class="form-control" placeholder="Search for..." size="12" onBlur="getStoneNameList('');" onKeyUp="getStoneNameList('');">
 			  <span class="input-group-btn">
-			    <button class="btn btn-default" type="button" name="clear" value="" class="search_reset" onclick="clearSearch();">Clear!</button>
+			    <button class="btn btn-primary" type="button" name="clear" value="" class="search_reset" onclick="clearSearch();">Clear!</button>
 			  </span>
 
 			</div>
 			</form>
 			<div class="search_block">
 				<div id="searchStoneListDiv">
-					<p style="padding:10px;font-weight:bold;" class="text-center"><span id="searchStoneCnt"></span>&nbsp;stones found</span></p>
 					<table class="table" id="searchStoneTable"></table>
+					<p style="padding:10px;font-weight:bold;" class="text-center"><span id="searchStoneCnt"></span>&nbsp;stones found</span></p>
 				</div>
 				<div id="searchStoneLoadingDiv" style="text-align: center; padding: 5px;">
 					Loading...
@@ -99,11 +128,11 @@
       <div class="search_block" style="margin-top:10px;">
 
       </div>
-      <img src="{$_upDir}img/search_foot.png" alt="" width="147" height="12" border="0">
+      <img class="img-responsive" src="{$_upDir}img/search_foot.png" alt="" width="147" height="12" border="0">
       {else}
       {if ($option != 2)&&($option != 3)&&($option != 4)&&(1)}
       <div id="estimate2">
-      	<a href="https://marble.com/estimate" target="_blank"><img src="{$_upDir}img/slabmarketads/estimator3.jpg"></a>
+      	<a href="https://marble.com/estimate" target="_blank"><img class="img-responsive" src="{$_upDir}img/slabmarketads/estimator3.jpg"></a>
       </div>
       {/if}
       {/if}
@@ -111,7 +140,7 @@
   </div>
   <div class="panel panel-default ads_section">
     <div class="panel-body">
-      <a href="http://mrstone.com/products/agm-daily-granite-and-marble-cleaner?variant=1186761993" target="_blank"><img src="{$_upDir}img/slabmarketads/mrstone4.jpg"></a>
+      <a href="http://mrstone.com/products/agm-daily-granite-and-marble-cleaner?variant=1186761993" target="_blank"><img class="img-responsive" src="{$_upDir}img/slabmarketads/mrstone4.jpg"></a>
     </div>
   </div>
 

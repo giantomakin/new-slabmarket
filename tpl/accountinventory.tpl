@@ -1,48 +1,93 @@
 ﻿{assign var='title' value='Inventory'}
 {assign var='menu'  value=4}
+<script type="text/javascript" src="{$_upDir}xml_js/account.js"></script>
+<div class="col-sm-12"> <!-- Begin Column -->
 
-{include file='account_start.tpl'}
+	<div class="panel panel-default panel_with_tabs">
+		<div class="panel-heading">
+			<h3>Account #{$userid}</h3>
+		</div>
+		<div class="panel-body" >
+			      <div class="btn-group btn-group-justified" style="padding:20px">
+			        <div class="btn-group" role="group">
+			          <a type="button" class="btn btn-default" href="{$_upDir}account" role="button">Account Info</a>
+			        </div>
+			        <div class="btn-group" role="group">
+			          <a type="button" class="btn btn-default active" href="{$_upDir}accountInventory" role="button">Inventory</a>
+			        </div>
+			        <div class="btn-group" role="group">
+			          <a type="button" class="btn btn-default" href="{$_upDir}accountOrders" role="button">Orders</a>
+			        </div>
+			      </div>
 
-{if $msg!=''}
-<div class="actionNotice" style="text-align: center; font-weight: 600; font-size: 16px; margin: 10px 5px 2px 5px; padding: 5px; border: 2px solid green; color: green">{$msg}</div>
-{/if}
+			      <div class="tab-content col-sm-12"> <!-- Start of Tab Content -->
+
+					{if $msg!=''}
+					<div class="alert alert-dismissible alert-success">
+					  <button type="button" class="close" data-dismiss="alert">&times;</button>
+					  <strong>Well done!</strong> {$msg}.
+					</div>
+					{/if}
 
 
-{assign var='arr' value=$arrSlabItem}
-{if is_array($arr)}
+			        <div role="tabpanel" class="tab-pane active" id="tab2" style="padding:20px"> <!-- Start of Tab 2 -->
+			          <div>
 
-<table class="inventoryListTable" cellspacing="0" border="0">
-	<tr>
-		<th>Id</th>
-		<th>Stone name</th>
-		<th>Type</th>
-		<th>Thickness</th>
-		<th>Size</th>
-		<th>Price</th>
-		<th colspan="2" style="text-align: right;"><a href="{$_upDir}accountInventoryNew" style=""><img src="{$_upDir}img/add_item.png" alt="" width="115" height="26" border="0"></a></th>
-	</tr>
-	{section name=i loop=$arr}
-	{assign var='countryCode' value=$arr[i].item_country}				
-	<tr>
-		<td>{$arr[i].id_slab_item}</td>
-		<td><a href="{$_upDir}accountInventoryEdit/{$arr[i].id_slab_item}">{$arr[i].stone_name|capitalize}</a></td>
-		<td>{$arr[i].stone_type}</td>
-		<td>{if $arr[i].id_slab_product==1}<sup>3</sup>/<sub>4</sub>{elseif $arr[i].id_slab_product==2}1<sup>1</sup>/<sub>4</sub>{/if}</td>
-		<td>{$arr[i].item_width}in. x {$arr[i].item_height}in. </td>
-		<td>{if $arr[i].price_currency == 'USD'}${else}&euro;{/if}{$arr[i].item_price}/sq.ft.</td>
-		<td><a href="{$_upDir}accountInventoryEdit/{$arr[i].id_slab_item}">edit</a></td>
-		<td><a onclick="deleteItem({$arr[i].id_slab_item});" style="cursor: pointer; text-decoration: underline;">delete</a></td>
-	</tr>		
-	{/section}
-</table>
+			             <p> <a href="{$_upDir}accountInventoryNew" class="btn btn-success pull-right">Add New Item</a></p>
+			              <h3 class="pull-left">Inventory</h3>
 
-{else}
-	<div style="font:bold 13px Arial;color:#325d6a;text-align:center;padding:20px;">
-		No slabs defined<br /><br />
-		<a href="{$_upDir}accountInventoryNew" style=""><img src="{$_upDir}img/add_item.png" alt="" width="115" height="26" border="0"></a>
+			            {assign var='arr' value=$arrSlabItem}
+						{if is_array($arr)}
+			            <table>
+			              <thead>
+			                <tr>
+			                  <th class="col-sm-1">ID</th>
+			                  <th class="col-sm-1">Stone Name</th>
+			                  <th class="col-sm-1">Type</th>
+			                  <th class="col-sm-1">Thickness</th>
+			                  <th class="col-sm-1">Size</th>
+			                  <th class="col-sm-1">Price</th>
+			                  <th class="col-sm-1"> </th>
+			                  <th class="col-sm-1"> </th>
+			                </tr>
+			              </thead>
+			              <tbody>
+			              	{section name=i loop=$arr}
+							{assign var='countryCode' value=$arr[i].item_country}
+			                <tr>
+			                  <td>{$arr[i].id_slab_item}</td>
+			                  <td><a href="{$_upDir}accountInventoryEdit/{$arr[i].id_slab_item}">{$arr[i].stone_name|capitalize}</a></td>
+			                  <td>{$arr[i].stone_type}</td>
+			                  <td>{if $arr[i].id_slab_product==1}<sup>3</sup>/<sub>4</sub>{elseif $arr[i].id_slab_product==2}1<sup>1</sup>/<sub>4</sub>{/if}</td>
+			                  <td>{$arr[i].item_width}in. x {$arr[i].item_height}in. </td>
+			                  <td>{if $arr[i].price_currency == 'USD'}${else}&euro;{/if}{$arr[i].item_price}/sq.ft.</td>
+			                  <td><a href="{$_upDir}accountInventoryEdit/{$arr[i].id_slab_item}">edit</a></td>
+			                  <td><a onclick="deleteItem({$arr[i].id_slab_item});" style="cursor: pointer; text-decoration: underline;">delete</a></td>
+			                </tr>
+							{/section}
+			              </tbody>
+			            </table>
+			            {else}
+						<br>
+		            	<div style="clear:both" class="alert alert-dismissible alert-danger">
+		            	  <button type="button" class="close" data-dismiss="alert">&times;</button>
+		            	  <strong>No slabs defined!</strong> <a href="{$_upDir}accountInventoryNew" class="alert-link">Add item</a>.
+		            	</div>
+
+
+
+
+			            {/if}
+			          </div>
+			        </div> <!-- End of Tab 2 -->
+
+
+
+			      </div> <!-- End of Tab Content -->
+
+		</div>
 	</div>
-{/if}
+</div> <!-- End Column -->
 
-<br />
-						
-{include file='account_end.tpl'}
+
+<!-- {include file='account_end.tpl'} -->

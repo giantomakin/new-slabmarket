@@ -2,29 +2,31 @@
       </div> <!-- END ROW -->
 
     </div> <!-- End of MAIN CONTAINER -->
-  </div> <!-- End of Container-Fluid -->
+
 
 
   <!-- ================================== Footer Section ==================================== -->
   <footer>
-    <div class="container-fluid panel-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-9">
-            <ul class="footer_navi">
-              <li><a href="{$_upDir}about-us">About Us</a></li>
-              <li><a href="{$_upDir}contact-us">Contact Us</a></li>
-              <li><a href="{$_upDir}terms-of-use">Terms of Use</a></li>
-              <li><a href="{$_upDir}terms-of-sale">Terms of Sale</a></li>
-              <li><a href="{$_upDir}privacy-policy">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-3 copy_right">
-            <p>&copy; SlabMarket 2004 - 2017 <br/> All Rights Reserved</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  	<div class="container-fluid panel-footer">
+  		<div class="container panel-footer">
+  			<div class="footer-social">
+  				<div class="container text-center">
+  					<ul class="list-inline">
+  						<li style="margin-right:20px"><small><a href="{$_upDir}about-us">About Us </a></small></li>
+  						<li style="margin-right:20px"><small><a href="{$_upDir}contact-us">Contact Us </a></small></li>
+  						<li style="margin-right:20px"><small><a href="{$_upDir}terms-of-use">Terms of Use </a></small></li>
+  						<li style="margin-right:20px"><small><a href="{$_upDir}terms-of-sale">Terms of Sale </a></small></li>
+  						<li style="margin-right:20px"><small><a href="{$_upDir}privacy-policy">Privacy Policy </a></small></li>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="footer-main">
+  				<div class="container">
+  					<small>&copy; SlabMarket 2004 - 2017 All rights reserved.</small>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
   </footer>
   <!-- ============================== End of Footer Section ================================= -->
   <!-- Latest compiled and minified JavaScript -->

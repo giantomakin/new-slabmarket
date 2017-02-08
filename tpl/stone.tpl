@@ -179,15 +179,14 @@
 								</tbody>
 							</table>
 							<div class="input-group plus_minus_quantity"> <!-- ADDED CLASS -->
-								<p><b>Bundle Quantities: </b> <span class="input-group-btn">
-									<button type="button" name="buttonMinus" value="" onclick="changeQuantity(-1,'{$container_summary.bundle}','{$stone.id_slab_user}');" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
-										<span class="glyphicon glyphicon-minus"></span>
-									</button>
-									<input type="text" name="quantityField" value="1" size="1" disabled class="form-control input-number cart_quantity" value="1" min="1" max="10">
-									<button type="button" name="buttonPlus" value="" onclick="changeQuantity(1,'{$container_summary.bundle}','{$stone.id_slab_user}');" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-										<span class="glyphicon glyphicon-plus"></span>
-									</button>
-								</span></p>
+								<p><b>Bundle Quantities: </b> <a href="#" class="btn btn-default btn-xs" role="button" name="buttonMinus" value="" onclick="changeQuantity(-1,'{$container_summary.bundle}','{$stone.id_slab_user}');" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]"><i class="fa fa-minus-circle" aria-hidden="true" style="color:#ff4136" ></i> </a>
+								<input style="height:23px;" type="text" name="quantityField" value="1" size="1" disabled class="form-control input-number cart_quantity input-sm" value="1" min="1" max="10">
+								<a href="#" class="btn btn-default btn-xs" role="button" name="buttonPlus" value="" onclick="changeQuantity(1,'{$container_summary.bundle}','{$stone.id_slab_user}');" data-type="plus" data-field="quant[1]"><i class="fa fa-plus-circle" style="color:#28b62c;" aria-hidden="true"></i> </a></p>
+
+
+
+
+
 
 							</div>
 
@@ -201,98 +200,99 @@
 
 							<div>
 								{if $userType == 0}
-									{if $container_summary.bundle < 7}
-										{if $smarty.session.slabmarket.redirect.user == 1}
-										<input type="submit" name="submit" value="Add to Order" class="btn btn-info cart_submit2 pull-right">
-										{else}
-										<input type="submit" name="submit" value="Add to Container" class="btn btn-info cart_submit pull-right">
-										{/if}
-									{else}
-									<div style="font-size: 11px; height: 50px; vertical-align:middle;">
-										<div style="color: red; font-size: 13px; padding: 5px;">Container is full</div>
-										go to <a href="{$_upDir}container">your container</a> to change slab quantities
-									</div>
-									{/if}
+								{if $container_summary.bundle < 7}
+								{if $smarty.session.slabmarket.redirect.user == 1}
+								<input type="submit" name="submit" value="Add to Order" class="btn btn-info cart_submit2 pull-right">
+								{else}
+								<input type="submit" name="submit" value="Add to Container" class="btn btn-info cart_submit pull-right">
+								{/if}
+								{else}
+								<div style="font-size: 11px; height: 50px; vertical-align:middle;">
+								<div style="color: red; font-size: 13px; padding: 5px;">Container is full </div>
+									go to <a href="{$_upDir}container">your container</a> to change slab quantities
+								</div>
+								{/if}
+								{/if}
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div> <!-- End Row -->
+
+		<div class="row"> <!-- Begin Row -->
+			<div class="col-sm-12">
+
+				<div class="btn-group btn-group-justified" role="tablist" aria-label="...">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Other Stones from {if $stone.id_slab_user != 1}Supplier{else}Warehouse{/if} #{$stone.id_slab_user} ({$cntOtherStone})</button>
+					</div>
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">{$stone.stone_name|capitalize} in other Quarries ({$cntOtherStoneUser})</button>
+					</div>
+				</div>
+
+				<div class="tab-content tab_content_border"> <!-- Start of tab content -->
+
+					<div role="tabpanel" class="tab-pane active" id="tab1">
+						<div class="row slab_list"> <!-- Start of Row -->
+							<div class="col-sm-12">
+
+								{if is_array($arrOtherStone)}
+								{assign var='arr' value=$arrOtherStone}
+								{section name=i loop=$arr}
+								{stone}
+								{/section}
+								{else}
+								<div class="alert alert-dismissible alert-danger">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									<strong>Oh snap!</strong> No other slabs.
+								</div>
 								{/if}
 
-						</form>
+							</div>
+						</div> <!-- End of Row -->
+
 					</div>
-				</div>
-			</div>
 
-		</div>
+					<div role="tabpanel" class="tab-pane" id="tab2">
+						<div class="row">
+							<div class="col-sm-12">
+								{if is_array($arrOtherStoneUser)}
+								{assign var='arr' value=$arrOtherStoneUser}
 
-	</div> <!-- End Row -->
+								{section name=i loop=$arr}
+								{assign var='mode' value='stoneOtherQuarries'}
+								{stone}
+								{/section}
 
-	<div class="row"> <!-- Begin Row -->
-		<div class="col-sm-12">
-
-			<div class="btn-group btn-group-justified" role="tablist" aria-label="...">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Other Stones from {if $stone.id_slab_user != 1}Supplier{else}Warehouse{/if} #{$stone.id_slab_user} ({$cntOtherStone})</button>
-				</div>
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">{$stone.stone_name|capitalize} in other Quarries ({$cntOtherStoneUser})</button>
-				</div>
-			</div>
-
-			<div class="tab-content tab_content_border"> <!-- Start of tab content -->
-
-				<div role="tabpanel" class="tab-pane active" id="tab1">
-					<div class="row slab_list"> <!-- Start of Row -->
-						<div class="col-sm-12">
-
-							{if is_array($arrOtherStone)}
-							{assign var='arr' value=$arrOtherStone}
-							{section name=i loop=$arr}
-							{stone}
-							{/section}
-							{else}
-							<div class="alert alert-dismissible alert-danger">
-								<button type="button" class="close" data-dismiss="alert">&times;</button>
-								<strong>Oh snap!</strong> No other slabs.
+								{else}
+								<br>
+								<div class="alert alert-dismissible alert-danger">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									<strong>Oh snap!</strong> No other quarries have this stone.
+								</div>
+								{/if}
 							</div>
-							{/if}
-
-						</div>
-					</div> <!-- End of Row -->
-
-				</div>
-
-				<div role="tabpanel" class="tab-pane" id="tab2">
-					<div class="row">
-						<div class="col-sm-12">
-							{if is_array($arrOtherStoneUser)}
-							{assign var='arr' value=$arrOtherStoneUser}
-
-							{section name=i loop=$arr}
-							{assign var='mode' value='stoneOtherQuarries'}
-							{stone}
-							{/section}
-
-							{else}
-							<br>
-							<div class="alert alert-dismissible alert-danger">
-								<button type="button" class="close" data-dismiss="alert">&times;</button>
-								<strong>Oh snap!</strong> No other quarries have this stone.
-							</div>
-							{/if}
 						</div>
 					</div>
-				</div>
 
-			</div> <!-- End of tab content -->
+				</div> <!-- End of tab content -->
 
+			</div>
+		</div> <!-- End Row -->
+
+		<div class="row">
+			<div class="col-sm-12">
+				<a href="https://www.marble.com/materials-category"><img src="{$_upDir}img/slabmarketads/estimate2.jpg" style="width: 100%; padding: 25px 0;"></a>
+
+			</div>
 		</div>
-	</div> <!-- End Row -->
 
-	<div class="row">
-		<div class="col-sm-12">
-			<a href="https://www.marble.com/materials-category"><img src="{$_upDir}img/slabmarketads/estimate2.jpg" style="width: 100%; padding: 25px 0;"></a>
-
-		</div>
 	</div>
-
 </div>
 <!-- END OF RIGHT SIDE CONTAINER -->
 
