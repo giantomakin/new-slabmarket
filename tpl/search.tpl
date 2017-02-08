@@ -21,7 +21,7 @@
 	    	  	</a>
 
 	    	  {if $_userIsSigned==1}
-	    	  <a class="list-group-item" href="{$_upDir}account" title="">My account</a>
+	    	  <a class="list-group-item" href="{$_upDir}account" title="">My Account</a>
 	    	  <a class="list-group-item" href="{$_upDir}logout">Sign Out</a>
 	    	  {else}
 	    	  <a class="list-group-item" href="{$_upDir}login" title="" class="tl_right">Sign In</a>
@@ -111,7 +111,7 @@
 			<div class="search_block">
 				<div id="searchStoneListDiv">
 					<table class="table" id="searchStoneTable"></table>
-					<p style="padding:10px;font-weight:bold;" class="text-center"><span id="searchStoneCnt"></span>&nbsp;stones found</span></p>
+					<p style="padding:10px;font-weight:bold;" class="text-center"><span id="searchStoneCnt"></span>&nbsp;stone(s) found</span></p>
 				</div>
 				<div id="searchStoneLoadingDiv" style="text-align: center; padding: 5px;">
 					Loading...

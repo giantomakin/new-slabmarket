@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="{$_upDir}css/stone_details.css" TYPE="text/css">
 <link rel="stylesheet" href="{$_upDir}css/autocomplete.css" TYPE="text/css">
 <link rel="stylesheet" href="{$_upDir}css/lightbox.css" type="text/css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
 <link rel="shortcut icon" href="/favicon.ico">
 
 <!-- Latest compiled and minified JavaScript -->
@@ -42,7 +43,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{$_upDir}">Slab Market</a>
+				<a class="navbar-brand" href="{$_upDir}" style="color:#163c47; font-size: 30px; font-family: 'Michroma', sans-serif;"><strong>Slab Market</strong></a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">

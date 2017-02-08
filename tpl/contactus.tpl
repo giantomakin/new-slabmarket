@@ -55,7 +55,7 @@
 								<div class="form-inline">
 									<input type="text" name="phone1" value="{$data.phone1}" class="form-control" size="3" maxlength="3">-
 									<input type="text" name="phone2" value="{$data.phone2}" class="form-control" size="3" maxlength="3">-
-									<input type="text" name="phone3" value="{$data.phone3}" class="form-control" size="4" maxlength="4">ext
+									<input type="text" name="phone3" value="{$data.phone3}" class="form-control" size="4" maxlength="4"> ext
 									<input type="text" name="phone4" value="{$data.phone4}" class="form-control" size="3" maxlength="3">
 								</div>
 							</div>
