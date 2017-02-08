@@ -1,7 +1,7 @@
 ﻿{assign var='title' value='Inventory'}
 {assign var='menu'  value=4}
 <script type="text/javascript" src="{$_upDir}xml_js/account.js"></script>
-<div class="col-sm-12"> <!-- Begin Column -->
+<div class="col-md-12"> <!-- Begin Column -->
 
 	<div class="panel panel-default panel_with_tabs">
 		<div class="panel-heading">
@@ -20,7 +20,7 @@
 			        </div>
 			      </div>
 
-			      <div class="tab-content col-sm-12"> <!-- Start of Tab Content -->
+			      <div class="tab-content col-md-12"> <!-- Start of Tab Content -->
 
 					{if $msg!=''}
 					<div class="alert alert-dismissible alert-success">
@@ -38,17 +38,16 @@
 
 			            {assign var='arr' value=$arrSlabItem}
 						{if is_array($arr)}
-			            <table>
+			            <table class="table table-striped">
 			              <thead>
 			                <tr>
-			                  <th class="col-sm-1">ID</th>
-			                  <th class="col-sm-1">Stone Name</th>
-			                  <th class="col-sm-1">Type</th>
-			                  <th class="col-sm-1">Thickness</th>
-			                  <th class="col-sm-1">Size</th>
-			                  <th class="col-sm-1">Price</th>
-			                  <th class="col-sm-1"> </th>
-			                  <th class="col-sm-1"> </th>
+			                  <th class="col-md-1">ID</th>
+			                  <th class="col-md-1">Stone Name</th>
+			                  <th class="col-md-1">Type</th>
+			                  <th class="col-md-1">Thickness</th>
+			                  <th class="col-md-1">Size</th>
+			                  <th class="col-md-1">Price</th>
+			                  <th class="col-md-1">Actions</th>
 			                </tr>
 			              </thead>
 			              <tbody>
@@ -61,8 +60,11 @@
 			                  <td>{if $arr[i].id_slab_product==1}<sup>3</sup>/<sub>4</sub>{elseif $arr[i].id_slab_product==2}1<sup>1</sup>/<sub>4</sub>{/if}</td>
 			                  <td>{$arr[i].item_width}in. x {$arr[i].item_height}in. </td>
 			                  <td>{if $arr[i].price_currency == 'USD'}${else}&euro;{/if}{$arr[i].item_price}/sq.ft.</td>
-			                  <td><a href="{$_upDir}accountInventoryEdit/{$arr[i].id_slab_item}">edit</a></td>
-			                  <td><a onclick="deleteItem({$arr[i].id_slab_item});" style="cursor: pointer; text-decoration: underline;">delete</a></td>
+
+			                  <td style="padding:3px;">
+			                  <a href="{$_upDir}accountInventoryEdit/{$arr[i].id_slab_item}" class="btn btn-info btn-xs">edit</a>
+			                  <a href="#" onclick="deleteItem({$arr[i].id_slab_item});" class="btn btn-danger btn-xs">delete</a>
+			                  </td>
 			                </tr>
 							{/section}
 			              </tbody>

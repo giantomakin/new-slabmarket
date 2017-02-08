@@ -19,7 +19,7 @@ function convertDimension(obj,dest) {
 
 {assign var='title' value='Inventory'}
 {assign var='menu'  value=4}
-<div class="col-sm-12"> <!-- Begin Column -->
+<div class="col-md-12"> <!-- Begin Column -->
 	<div class="panel panel-default panel_with_tabs">
 		<div class="panel-heading">
 			<h3>Stone</h3>
@@ -45,9 +45,8 @@ function convertDimension(obj,dest) {
 						<button type="button" class="close" data-dismiss="alert">×</button>
 						<strong>Oh snap!</strong> {$msg}.
 					</div>
-
-					</div>
 					{/if}
+				</div>
 
 					<div id="log_res" style="display:none">Updating Data</div>
 					<div id="log_res" class="alert alert-dismissible alert-info" style="display:none">

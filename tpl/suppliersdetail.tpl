@@ -1,10 +1,32 @@
 ﻿{include file='search.tpl'}
-<div class="b2h" style="float:right;width:640px;margin:10px 0 0 0;"><div class="b2h_left"></div><div class="b2h_right"></div>
-	<h1>{if $_link2 == 1}Local Warehouse{else}Supplier #{$_link2}{/if} - Slab List</h1>
-</div>
-	<div class="s_cont_all" style="float:right;width:640px;">
+<!-- CONTAINER CONTAINS SLAB LIST / RIGHT SIDE CONTAINER -->
+<div class="container col-md-9">
+
+  <!-- First Row -->
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>{if $_link2 == 1}Local Warehouse{else}Supplier #{$_link2}{/if} - Slab List</h3>
+        </div>
+
+        <div class="panel-body">
+
 		{section name=i loop=$arr}
 		{stone}
 		{/section}
-	</div>
-<div class="g2h" style="float:right;width:640px;margin-bottom:10px;"><div class="g2h_left"></div><div class="g2h_right"></div>{assign var='linkString' value=$_link1}{include file="paging.tpl"}</div>
+        </div> <!-- End of Panel Body -->
+		<div>
+			<nav aria-label="Page navigation" class="page_navigation">
+				{assign var='linkString' value=$_link1}{include file="paging.tpl"}
+			</nav>
+		</div>
+      </div> <!-- End of Panel Default -->
+
+    </div>
+  </div>
+
+
+</div>
+<!-- End of Right Side Container -->

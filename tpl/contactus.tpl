@@ -10,7 +10,7 @@
 </script>
 {/literal}
 {include file='search.tpl'}
-<div class="col-sm-9">
+<div class="col-md-9">
 
 	<div class="panel panel-default">
 		<div class="panel-heading">

@@ -3,7 +3,7 @@
 <script type="text/javascript" src="{$_upDir}xml_js/account.js"></script>
 <!-- {include file='account_start.tpl'} -->
 
-<div class="col-sm-12"> <!-- Begin Column -->
+<div class="col-md-12"> <!-- Begin Column -->
 
 	<div class="panel panel-default panel_with_tabs">
 		<div class="panel-heading">
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 
-			<div class="tab-content col-sm-12"> <!-- Start of Tab Content -->
+			<div class="tab-content col-md-12"> <!-- Start of Tab Content -->
 
 				{if $msg!=''}
 				<div class="alert alert-dismissible alert-success">
@@ -41,13 +41,13 @@
 
 						{*{assign var='arr' value=$arr}*}
 						{if is_array($arr)}
-						<table>
+						<table class="table table-striped">
 							<thead>
 								<tr>
-									<th class="col-sm-1">ID</th>
-									<th class="col-sm-1">Status</th>
-									<th class="col-sm-1">Created</th>
-									<th class="col-sm-1"></th>
+									<th class="col-md-1">ID</th>
+									<th class="col-md-1">Status</th>
+									<th class="col-md-1">Created</th>
+									<th class="col-md-1">Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -56,7 +56,9 @@
 									<td>{$arr[i].id}</td>
 									<td>{$arr[i].status}</td>
 									<td>{$arr[i].created}</td>
-									<td><a href="{$_upDir}accountOrders/{$arr[i].id}">details</a></td>
+									<td>
+										<a style="margin-top:0;" href="{$_upDir}accountOrders/{$arr[i].id}" class="btn btn-info btn-xs">details</a>
+									</td>
 								</tr>
 								{/section}
 							</tbody>

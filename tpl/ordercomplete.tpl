@@ -1,20 +1,39 @@
 ﻿{assign var='step'  value=3}
 
-<div class="b2h" style="width:800px;margin-top:10px;"><div class="b2h_left"></div><div class="b2h_right"></div>{include file='orderpath.tpl'}<h1>Order Confirmation</h1></div>
-<div class="bckgrd800">
+<div class="col-md-12">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="">Order Confirmation</h3>
+		</div>
+		<div class="panel-body">
+
+			{include file='orderpath.tpl'}
+
+			<h3 class="page-header">
+				Order Confirmation
+			</h3>
+
+			<div class="row">
 
 
-<br /><br /><br />
-order complete
-<br /><br /><br />
+
+
+				<div class="alert alert-dismissible alert-success">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<p>Order complete!</p>
+				</div>
 
 
 
+			</div>
 
 
-<img src="{$UpDir}img/bckgrd800b.png" alt="" width="800" height="5" border="0">
+
+		</div>
+
+	</div>
 </div>
-
 
 
 

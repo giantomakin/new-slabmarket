@@ -22,7 +22,7 @@ td.list {border-bottom: 1px solid #FFFFFF;}
 </style>
 {/literal}
 
-<div class="col-sm-12">
+<div class="col-md-12">
 
 	<div class="panel panel-default">
 		<div class="panel-heading">
@@ -84,8 +84,8 @@ td.list {border-bottom: 1px solid #FFFFFF;}
 								<td valign="bottom" style="padding: 5px; border-left: 1px solid #FFFFFF; width: 80px;" class="list"><div style="padding: 5px; font-size: 14px;">${$arr[i].subtotal|string_format:"%.2f"}</div></td>
 							</tr>
 							{/section}
-							<tr style="background-color: #88969d">
-								<td class="list" colspan="3" style="padding: 5px; font-size: 14px; color: #FFFFFF;">
+							<tr>
+								<td class="list" colspan="3" style="padding: 5px; font-size: 14px;">
 									<span style="margin-right: 20px;">Bundles: <b>{$container_summary.bundle}</b></span>
 									<span style="margin-right: 20px;">Slabs: <b>{$container_summary.bundle*7}</b></span>
 									<span>Coverage: <b>{$container_summary.coverage}</b></span>

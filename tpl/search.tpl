@@ -1,7 +1,7 @@
 ﻿<script type="text/javascript" src="../xml_js/common.js"></script>
 <script type="text/javascript" src="../xml_js/stonename.js"></script>
 <!-- LEFT SIDE CONTAINER -->
-<div class="container col-sm-3" id="id_search">
+<div class="container col-md-3" id="id_search">
 
   <div class="panel panel-default your_container_tab">
 	    <div class="panel-heading">

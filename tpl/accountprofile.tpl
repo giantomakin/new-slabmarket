@@ -5,7 +5,7 @@
 {assign var='title' value='Edit Profile Information'}
 {assign var='menu'  value=3}
 <!-- {include file='account_start.tpl'} -->
-<div class="col-sm-12"> <!-- Begin Column -->
+<div class="col-md-12"> <!-- Begin Column -->
 	<div class="panel panel-default panel_with_tabs">
 		<div class="panel-heading">
 			<h3>Account #{$userid}</h3>

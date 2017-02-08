@@ -142,7 +142,7 @@
 
 				<div class="col-sm-12 no-padding">
 					<div class="panel panel-default">
-						<div class="panel-heading" style="text-align: center;">
+						<div class="panel-heading">
 							<h3 class="panel-title">Inquire</h3> <!-- Or $Price/sq.ft -->
 						</div>
 						<div class="panel-body">
