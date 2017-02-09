@@ -2,7 +2,7 @@
 {assign var='menu'  value=1}
 <script type="text/javascript" src="{$_upDir}xml_js/account.js"></script>
 <!-- {include file='account_start.tpl'} -->
-<div class="col-sm-12"> <!-- Begin Column -->
+<div class="col-md-12"> <!-- Begin Column -->
 
 	<div class="panel panel-default panel_with_tabs">
 		<div class="panel-heading">
@@ -22,7 +22,7 @@
 				</div>
 			</div>
 
-			<div class="tab-content col-sm-12"> <!-- Start of Tab Content -->
+			<div class="tab-content col-md-12"> <!-- Start of Tab Content -->
 
 				<div role="tabpanel" class="tab-pane active" id="tab1" style="padding:20px"> <!-- Start of Tab 1 -->
 

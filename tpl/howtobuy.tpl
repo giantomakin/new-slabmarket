@@ -1,9 +1,9 @@
 {include file='search.tpl'}
-<div class="container col-sm-9">
+<div class="container col-md-9">
 
 	<!-- First Row -->
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="">How to Buy Slabs...</h3>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3>Buying Stone Slabs from a Quarry in 4 easy steps:</h3>
@@ -52,7 +52,7 @@
 					<div class="tab-content">
 
 						<div role="tabpanel" class="tab-pane active" id="tab1">
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 								<h2>Building a Container</h2>
 								<ul>
 									<li>Find the stone</li>
@@ -61,7 +61,7 @@
 									<li>Repeat until container is full</li>
 								</ul>
 							</div>
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 							<br>
 								<img src="{$UpDir}img/buyslabs1.jpg" class="img-responsive img-rounded">
 							<br>
@@ -69,7 +69,7 @@
 						</div>
 
 						<div role="tabpanel" class="tab-pane" id="tab2">
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 								<h2>Placing the Order</h2>
 								<ul>
 									<li>Confirm your order by phone (we will call)</li>
@@ -78,7 +78,7 @@
 									<li>Wire the deposit to us</li>
 								</ul>
 							</div>
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 							<br>
 								<img src="{$UpDir}img/buyslabs2.jpg" class="img-responsive img-rounded">
 							<br>
@@ -86,12 +86,12 @@
 						</div>
 
 						<div role="tabpanel" class="tab-pane" id="tab3">
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 							<br>
 								<img src="{$UpDir}img/buyslabs3.jpg" class="img-responsive img-rounded">
 							<br>
 							</div>
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 								<h2>Transfer of Legal Documents</h2>
 								<ul>
 									<li>Relax and enjoy teh document-free importing!</li>
@@ -100,12 +100,12 @@
 						</div>
 
 						<div role="tabpanel" class="tab-pane" id="tab4">
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 							<br>
 								<img src="{$UpDir}img/buyslabs4.jpg" class="img-responsive img-rounded">
 							<br>
 							</div>
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 								<h2>Shipping Process</h2>
 								<ul>
 									<li>Slabs packaged into the container and shipped to the harbor</li>
@@ -122,7 +122,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">More Details:</h3>
@@ -135,7 +135,7 @@
 
 
 
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Building a Container</h3>
@@ -146,7 +146,7 @@
 			</div>
 		</div>
 
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Placing the Order</h3>
@@ -159,7 +159,7 @@
 
 
 
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Transfer of Legal documents</h3>

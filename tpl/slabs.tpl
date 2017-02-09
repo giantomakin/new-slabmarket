@@ -60,10 +60,10 @@
 	}
 </style>
 {/literal}
-<div class="container col-sm-9">
+<div class="container col-md-9">
 	<!-- First Row -->
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3>Stones from Quarries</h3>

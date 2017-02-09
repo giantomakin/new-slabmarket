@@ -1,10 +1,10 @@
 ﻿{include file='search.tpl'}
    <!-- CONTAINER CONTAINS SLAB LIST / RIGHT SIDE CONTAINER -->
-        <div class="container col-sm-9">
+        <div class="container col-md-9">
 
           <!-- First Row -->
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-12">
 
               <div class="panel panel-default">
                 <div class="panel-heading">

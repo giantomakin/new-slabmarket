@@ -1,10 +1,10 @@
 ﻿{include file='search.tpl'}
 <!-- CONTAINER CONTAINS SLAB LIST / RIGHT SIDE CONTAINER -->
-        <div class="container col-sm-9">
+        <div class="container col-md-9">
 
           <!-- First Row -->
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-12">
 
               <div class="panel panel-default">
                 <div class="panel-heading">
@@ -16,7 +16,7 @@
 
                   <p><strong>Slab Market:</strong> Roberto, please give us some background information on your company.</p> <br/>
 
-                  <p><strong>Roberto Vieira:</strong> Our company, BSE, is a medium-sized manufacturer and exporter of natural stone slabs in Brazil. Before finding out about Slab Market, we usually sold our material to large fabricators and warehouses. While business has always been there from the large warehouses, my quarry’s vision is to expand and serve even the medium and small size fabricators directly. Up till now, we were unsuccessful in reaching them. These smaller fabricators are harder to find therefore I always had trouble sending a sales rep. They were often deterred by the legal paperwork of importing and just a general fear of making a mistake. It was hard to earn the trust of a small fabricator that has never dealt with an overseas quarry. I stumbled on www.slabmarket.com while looking for a new way to advertise my stone selection overseas. On my initial visit to the website, I was impressed by the friendly interface and the large number of quarries already using Slab Market. After looking around on the website I learned a surprising fact – All Granite and Marble (www.marble.com) is the company that runs Slab Market. I have sold slabs to All Granite before and know that they are one of the biggest natural stone fabricators in the United States. With a trusted and respected company like AGM running the Slab Market, I felt at ease knowing that that the transaction is in good hands. I was excited to try this innovative service and decided to register my quarry right away.</p> <br/>
+                  <p><strong>Roberto Vieira:</strong> Our company, BSE, is a medium-sized manufacturer and exporter of natural stone slabs in Brazil. Before finding out about Slab Market, we usually sold our material to large fabricators and warehouses. While business has always been there from the large warehouses, my quarry’s vision is to expand and serve even the medium and mdall size fabricators directly. Up till now, we were unsuccessful in reaching them. These mdaller fabricators are harder to find therefore I always had trouble sending a sales rep. They were often deterred by the legal paperwork of importing and just a general fear of making a mistake. It was hard to earn the trust of a mdall fabricator that has never dealt with an overseas quarry. I stumbled on www.slabmarket.com while looking for a new way to advertise my stone selection overseas. On my initial visit to the website, I was impressed by the friendly interface and the large number of quarries already using Slab Market. After looking around on the website I learned a surprising fact – All Granite and Marble (www.marble.com) is the company that runs Slab Market. I have sold slabs to All Granite before and know that they are one of the biggest natural stone fabricators in the United States. With a trusted and respected company like AGM running the Slab Market, I felt at ease knowing that that the transaction is in good hands. I was excited to try this innovative service and decided to register my quarry right away.</p> <br/>
 
                   <p><strong>Slab Market:</strong> Please explain the process of signing up and listing your quarry with Slab Market.</p> <br/>
 

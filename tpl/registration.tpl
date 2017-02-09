@@ -2,7 +2,7 @@
 <script type="text/javascript" src="{$_upDir}core/js/formValidate/formValidate.js"></script>
 <script type="text/javascript" src="{$_upDir}xml_js/registration.js"></script>
 <!-- Begin Row -->
-<div class="col-sm-12">
+<div class="col-md-12">
 
 	<div class="panel panel-default">
 		<div class="panel-heading">

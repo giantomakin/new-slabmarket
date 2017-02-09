@@ -1,6 +1,6 @@
 ﻿{assign var='title' value='General account information'}
 {assign var='menu'  value=1}
-<div class="col-sm-12"> <!-- Begin Column -->
+<div class="col-md-12"> <!-- Begin Column -->
 	<div class="panel panel-default panel_with_tabs">
 		<div class="panel-heading">
 			<h3>Account #{$userid}</h3>

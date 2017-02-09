@@ -21,7 +21,7 @@ var containerValuesArr = new Array();
 </script>
 {/literal}
 
-<div class="col-sm-12">
+<div class="col-md-12">
 	<h1 class="page-header">
 	    {if $container.user == 1}Order from Warehouse{else}Container{/if}
 	</h1>
@@ -34,7 +34,7 @@ var containerValuesArr = new Array();
 			</div>
 		{/if}
 	<div class="row">
-		<div class="col-sm-10">
+		<div class="col-md-10">
 			<table class="table table-bordered">
 			  <thead>
 			    <tr>

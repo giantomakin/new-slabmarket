@@ -1,6 +1,6 @@
 ﻿
 <!-- Begin Row -->
-<div class="col-sm-12">
+<div class="col-md-12">
 
 	<div class="panel panel-default">
 		<div class="panel-heading">

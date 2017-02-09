@@ -1,9 +1,9 @@
 ﻿{include file='search.tpl'}
-<div class="container col-sm-9">
+<div class="container col-md-9">
 
 	<!-- First Row -->
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3>How to Sell Slabs...</h3>
@@ -25,7 +25,7 @@
 					<div class="tab-content">
 
 						<div role="tabpanel" class="tab-pane active" id="tab1">
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 								<h2>Register Your Company</h2>
 								<ul>
 									<li>Provide information about your company</li>
@@ -33,7 +33,7 @@
 									<li>Verify your account</li>
 								</ul>
 							</div>
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 								<br>
 								<img class="img-responsive img-rounded" src="{$_upDir}img/sellslabs1.jpg">
 								<br>
@@ -41,12 +41,12 @@
 						</div>
 
 						<div role="tabpanel" class="tab-pane" id="tab2">
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 								<br>
 								<img class="img-responsive img-rounded" src="{$_upDir}img/sellslabs2.jpg">
 								<br>
 							</div>
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 								<h2>Add Your Slabs</h2>
 								<ul>
 									<li>List your inventory</li>
@@ -56,12 +56,12 @@
 						</div>
 
 						<div role="tabpanel" class="tab-pane" id="tab3">
-							<div class="col-sm-6 left-section">
+							<div class="col-md-6 left-section">
 								<br>
 								<img class="img-responsive img-rounded" src="{$_upDir}img/sellslabs3.jpg">
 								<br>
 							</div>
-							<div class="col-sm-6 right-section">
+							<div class="col-md-6 right-section">
 								<h2>Order Processing</h2>
 								<ul>
 									<li>Photograph the ordered bundle</li>
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">More Details:</h3>
@@ -85,7 +85,7 @@
 			</div>
 		</div>
 
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Register Your Company</h3>
@@ -96,7 +96,7 @@
 			</div>
 		</div>
 
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Add Your Slabs</h3>
@@ -107,7 +107,7 @@
 			</div>
 		</div>
 
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Ordering Process</h3>
