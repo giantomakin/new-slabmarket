@@ -228,10 +228,10 @@
 
 				<div class="btn-group btn-group-justified" role="tablist" aria-label="...">
 					<div class="btn-group" role="group">
-						<button type="button" class="btn btn-default" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Other Stones from {if $stone.id_slab_user != 1}Supplier{else}Warehouse{/if} #{$stone.id_slab_user} ({$cntOtherStone})</button>
+						<button type="button" class="btn btn-default" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Other Stones from {if $stone.id_slab_user != 1}Supplier{else}Warehouse{/if} #{$stone.id_slab_user} <span class="badge">{$cntOtherStone}</span></button>
 					</div>
 					<div class="btn-group" role="group">
-						<button type="button" class="btn btn-default" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">{$stone.stone_name|capitalize} in other Quarries ({$cntOtherStoneUser})</button>
+						<button type="button" class="btn btn-default" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">{$stone.stone_name|capitalize} in other Quarries <span class="badge">{$cntOtherStoneUser}</span></button>
 					</div>
 				</div>
 

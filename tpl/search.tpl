@@ -16,7 +16,7 @@
 	    	  		{if $smarty.session.slabmarket.container.user == 1}
 	    	  		Order
 	    	  		{else}
-	    	  		Container
+	    	  		Container {if is_array($container.item_list)} <span class="badge">{$container.item_list|@count}</span> {/if}
 	    	  		{/if}
 	    	  	</a>
 
