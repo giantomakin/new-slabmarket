@@ -204,7 +204,7 @@
 								{if $smarty.session.slabmarket.redirect.user == 1}
 								<input type="submit" name="submit" value="Add to Order" class="btn btn-info cart_submit2 pull-right">
 								{else}
-								<input type="submit" name="submit" value="Add to Container" class="btn btn-info cart_submit pull-right">
+								<input type="submit" name="submit" value="Add to Container" class="btn btn-primary cart_submit pull-right">
 								{/if}
 								{else}
 								<div style="font-size: 11px; height: 50px; vertical-align:middle;">

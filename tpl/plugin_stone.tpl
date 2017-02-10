@@ -20,7 +20,7 @@
 			{if $mode=='stoneOtherQuarries'}
 				<a style="margin:0;padding:0; cursor: pointer;" onclick="redirectStone1('{$arr[i].stone_name}','stoneOtherQuarries',{$stone.id_slab_user},{$arr[i].id_slab_item})"><img src="{if $arr[i].id_slab_item_photo!='' && $arr[i].id_slab_item_photo!=0}{$_upDir}core/storage/slabmarket/stone/{$arr[i].id_slab_item_photo}_t.jpg{else}{$_upDir}img/stonenophoto.png{/if}" alt="{$arr[i].stone_name}"></a>
 			{else}
-				<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}" style="margin:0;padding:0;"><img src="{if $arr[i].id_slab_item_photo!='' && $arr[i].id_slab_item_photo!=0}{$_upDir}core/storage/slabmarket/stone/{$arr[i].id_slab_item_photo}_t.jpg{else}{$_upDir}img/stonenophoto.png{/if}" alt="{$arr[i].stone_name}"></a>
+				<a href="{$_upDir}{$arr[i].stone_name|replace:' ':'-'|lower}" style="margin:0;padding:0;"><img src="{if $arr[i].id_slab_item_photo!='' && $arr[i].id_slab_item_photo!=0}{$_upDir}core/storage/slabmarket/stone/{$arr[i].id_slab_item_photo}_t.jpg{else}{$_upDir}img/stonenophoto.png{/if}" alt="{$arr[i].stone_name}" class="img-rounded"></a>
 			{/if}
 
         </div>

@@ -10,7 +10,7 @@
 	    </div>
 	    <div class="panel-body">
 	    	<div class="list-group">
-	    	  <a class="list-group-item" href="{$_upDir}tracking" title="" class="tl_left">Order tracking</a>
+	    	  <a class="list-group-item" href="{$_upDir}tracking" title="" class="tl_left">Order Tracking</a>
 
 	    	  	<a class="list-group-item" href="{$_upDir}container" title="">
 	    	  		{if $smarty.session.slabmarket.container.user == 1}
