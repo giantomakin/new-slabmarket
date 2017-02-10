@@ -41,6 +41,7 @@
 			            <table class="table table-striped">
 			              <thead>
 			                <tr>
+<<<<<<< HEAD
 			                  <th class="col-md-1">ID</th>
 			                  <th class="col-md-1">Stone Name</th>
 			                  <th class="col-md-1">Type</th>
@@ -48,6 +49,16 @@
 			                  <th class="col-md-1">Size</th>
 			                  <th class="col-md-1">Price</th>
 			                  <th class="col-md-1">Actions</th>
+=======
+			                  <th>ID</th>
+			                  <th>Stone Name</th>
+			                  <th>Type</th>
+			                  <th>Thickness</th>
+			                  <th>Size</th>
+			                  <th>Price</th>
+			                  <th> </th>
+			                  <th> </th>
+>>>>>>> origin/master
 			                </tr>
 			              </thead>
 			              <tbody>

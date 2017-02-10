@@ -47,7 +47,11 @@
 									<th class="col-md-1">ID</th>
 									<th class="col-md-1">Status</th>
 									<th class="col-md-1">Created</th>
+<<<<<<< HEAD
 									<th class="col-md-1">Action</th>
+=======
+									<th class="col-md-1"></th>
+>>>>>>> origin/master
 								</tr>
 							</thead>
 							<tbody>

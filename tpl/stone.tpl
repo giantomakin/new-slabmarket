@@ -74,11 +74,11 @@
 	<input type="hidden" id="iditem" value="0">
 	<input type="hidden" id="idstone" value="0">
 	<input type="hidden" id="iduser" value="0">
-	<div class="container col-sm-9">
+	<div class="container col-md-9">
 
 		<div class="row" style="padding: 0px;"> <!-- Begin Row -->
 
-			<div class="col-sm-12 col-md-6"> <!-- Start of Individual slab image side -->
+			<div class="col-md-12 col-md-6"> <!-- Start of Individual slab image side -->
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">{$stone.stone_name|capitalize}</h3>
@@ -88,7 +88,7 @@
 
 						{if ($option == 2)&&(0)}
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-md-12">
 								<div class="panel panel-default">
 									<div class="panel-heading">Kitchen countertop</div>
 									<div class="panel-body text-center">
@@ -113,7 +113,7 @@
 
 						{if ($option == 4)&&(0)}
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-md-12">
 								<div class="panel panel-default">
 									<div class="panel-heading">Get price for your kitchen countertop</div>
 									<div class="panel-body text-center">
@@ -138,9 +138,9 @@
 				</div>
 			</div> <!-- End of Individual slab image side -->
 
-			<div class="col-sm-12 col-md-6">
+			<div class="col-md-12 col-md-6">
 
-				<div class="col-sm-12 no-padding">
+				<div class="col-md-12 no-padding">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Inquire</h3> <!-- Or $Price/sq.ft -->
@@ -152,7 +152,7 @@
 				</div>
 
 
-				<div class="col-sm-12 no-padding order_here_section"> <!-- ADDED CLASS -->
+				<div class="col-md-12 no-padding order_here_section"> <!-- ADDED CLASS -->
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Order Here</h3>
@@ -224,7 +224,7 @@
 		</div> <!-- End Row -->
 
 		<div class="row"> <!-- Begin Row -->
-			<div class="col-sm-12">
+			<div class="col-md-12">
 
 				<div class="btn-group btn-group-justified" role="tablist" aria-label="...">
 					<div class="btn-group" role="group">
@@ -239,7 +239,7 @@
 
 					<div role="tabpanel" class="tab-pane active" id="tab1">
 						<div class="row slab_list"> <!-- Start of Row -->
-							<div class="col-sm-12">
+							<div class="col-md-12">
 
 								{if is_array($arrOtherStone)}
 								{assign var='arr' value=$arrOtherStone}
@@ -260,7 +260,7 @@
 
 					<div role="tabpanel" class="tab-pane" id="tab2">
 						<div class="row">
-							<div class="col-sm-12">
+							<div class="col-md-12">
 								{if is_array($arrOtherStoneUser)}
 								{assign var='arr' value=$arrOtherStoneUser}
 
@@ -286,7 +286,7 @@
 		</div> <!-- End Row -->
 
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-md-12">
 				<a href="https://www.marble.com/materials-category"><img src="{$_upDir}img/slabmarketads/estimate2.jpg" style="width: 100%; padding: 25px 0;"></a>
 
 			</div>

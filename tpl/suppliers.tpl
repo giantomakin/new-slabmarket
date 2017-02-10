@@ -79,7 +79,7 @@ function toggleLayer(lay) {
 					{section name=i loop=$arr}
 					{assign var='country' value=$arr[i].country}
 					<!-- Begin of Slab List -->
-					<div class="col-xs-3 col-sm-3 col-md-2 suppliers_card_list"> <!-- Start of Card 1 -->
+					<div class="col-xs-3 col-md-3 col-md-2 suppliers_card_list"> <!-- Start of Card 1 -->
 						<div class="card">
 							<a href="{$_upDir}suppliers/{$arr[i].id}">
 								<img class="card-img-top" src="{$_upDir}img/flags/{$countryArr[$country]|lower}.jpg" alt="{$countryArr[$country]}" alt="{$countryArr[$country]}">

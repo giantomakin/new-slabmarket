@@ -15,7 +15,11 @@
 
 					<div class="row">
 						<div class="col-md-7">
+<<<<<<< HEAD
 							<p>SlabMarket™ is an ongoing effort to enable natural stone fabricators in the United States to have the freedom of having their own slab inventory, rather than purchasing slabs from wholesalers. At the same time, we want to expand the quarries' customer base to include the small and medium fabricators. By taking the burden of shipping and handling on our shoulders, we provide a hassle-free service to both sides.</p>
+=======
+							<p>SlabMarket™ is an ongoing effort to enable natural stone fabricators in the United States to have the freedom of having their own slab inventory, rather than purchasing slabs from wholesalers. At the same time, we want to expand the quarries' customer base to include the mdall and medium fabricators. By taking the burden of shipping and handling on our shoulders, we provide a hassle-free service to both sides.</p>
+>>>>>>> origin/master
 						</div>
 						<div class="col-md-5"><img class="img-responsive" src="{$UpDir}img/aboutus2.jpg"></div>
 					</div>
